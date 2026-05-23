@@ -1,0 +1,107 @@
+specification: FinOps Framework
+specificationVersion: '1.0'
+schema: https://www.finops.org/framework/
+provider: Cantor Fitzgerald
+providerId: cantor-fitzgerald
+created: '2026-05-23'
+modified: '2026-05-23'
+reconciled: false
+tags:
+  - FinOps
+  - FOCUS
+  - Financial Services
+  - Investment Banking
+  - Prime Brokerage
+  - Market Data
+description: 'FOCUS-aligned FinOps profile for Cantor Fitzgerald: an institutional, privately
+  held financial services firm whose costs are bundled into client services agreements
+  (investment banking, brokerage, custody, financing, market data). There is no public per-call
+  price and no developer-platform metering; consumption is governed by trade commissions,
+  spread capture, financing rates, advisory fees, and market-data subscription tiers.'
+sources:
+  - https://www.cantor.com
+  - https://www.fenicsmd.com
+  - https://www.bgcgroup.com
+notes: No public usage / billing API. Reconciliation set to false; meters are modeled against
+  expected invoice or commission-statement line items.
+alignedWith:
+  framework: FinOps Foundation Framework
+  frameworkUrl: https://www.finops.org/framework/
+  dataSpec: FOCUS
+  dataSpecVersion: '1.3'
+  dataSpecUrl: https://focus.finops.org/focus-specification/v1-3/
+publisherName: Cantor Fitzgerald, L.P.
+serviceCategory: Financial Services
+billingModel:
+  pricingCategory: Bundled with Client Agreement
+  billingFrequency: Per-Invoice
+  billingCurrency: USD
+  chargeCategories:
+    - Purchase
+    - Adjustment
+    - Tax
+focusColumns:
+  ServiceName: Cantor Fitzgerald Institutional Services
+  ServiceCategory: Financial Services
+  ProviderName: Cantor Fitzgerald
+  PublisherName: Cantor Fitzgerald, L.P.
+  InvoiceIssuerName: Cantor Fitzgerald & Co.
+  BillingCurrency: USD
+meters:
+  - name: trade_execution
+    unit: trade
+    aggregation: count
+    dimensions:
+      - account
+      - asset_class
+      - venue
+  - name: spread_capture
+    unit: notional
+    aggregation: sum
+    dimensions:
+      - asset_class
+      - venue
+  - name: financing_balance
+    unit: average_daily_balance
+    aggregation: avg
+    dimensions:
+      - account
+      - currency
+  - name: prime_services_fees
+    unit: month
+    aggregation: sum
+    dimensions:
+      - account
+      - service
+  - name: market_data_subscription
+    unit: month
+    aggregation: sum
+    dimensions:
+      - feed
+      - venue
+      - redistribution_scope
+  - name: investment_banking_fees
+    unit: transaction
+    aggregation: sum
+    dimensions:
+      - mandate
+      - product
+principles:
+  - name: Visibility
+    description: Reconcile Cantor commission statements, financing-rate invoices, and Fenics
+      Market Data subscription invoices against expected activity; there is no developer-platform
+      cost feed.
+  - name: Allocation
+    description: Allocate by client account, mandate, fund, and underlying product line
+      (Investment Banking, Fixed Income, Equities, Prime Services, Real Estate Finance,
+      Fenics Market Data).
+  - name: Optimization
+    description: Optimization happens at the relationship level — execution venue choice,
+      financing rate negotiation, market-data entitlement scope (real-time vs. delayed,
+      redistribution scope) — rather than at the API call.
+  - name: Accountability
+    description: The client relationship manager owns the budget; the integration / trading
+      team monitors order flow and feed consumption to stay within contracted entitlements.
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com

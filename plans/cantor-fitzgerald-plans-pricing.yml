@@ -1,0 +1,103 @@
+specification: API Commons Plans
+specificationVersion: '0.1'
+schema: https://raw.githubusercontent.com/api-evangelist/interface-research/main/schema/api-commons.yml#/$defs/Plans
+provider: Cantor Fitzgerald
+providerId: cantor-fitzgerald
+created: '2026-05-23'
+modified: '2026-05-23'
+reconciled: false
+tags:
+  - Financial Services
+  - Investment Banking
+  - Prime Brokerage
+  - Fixed Income
+  - Market Data
+description: Cantor Fitzgerald is a privately held institutional financial services firm with no
+  public developer portal and no public list pricing. Access to electronic-trading connectivity
+  (FIX sessions), prime-brokerage services, and market data is bundled into the underlying
+  institutional client agreement. The closest public data surface is Fenics Market Data, sold
+  by affiliate BGC Group under a negotiated market-data agreement; entitlement and pricing are
+  not published.
+sources:
+  - https://www.cantor.com
+  - https://www.fenicsmd.com
+  - https://www.bgcgroup.com
+  - https://en.wikipedia.org/wiki/Cantor_Fitzgerald
+notes: Pricing not publicly disclosed; reconciliation set to false. Captures the institutional /
+  partner-private access model verified via Cantor.com, BGCGroup.com, and FenicsMD.com.
+plans:
+  - id: cantor-fitzgerald-institutional
+    name: Institutional Client Access
+    type: enterprise
+    description: Connectivity bundled with an existing Cantor Fitzgerald institutional client
+      relationship (Investment Banking, Fixed Income, Equities, Prime Services, Real Estate
+      Finance). Onboarding is coordinated through a sales coverage or relationship manager;
+      there is no self-serve sign-up.
+    entries:
+      - label: Bundled with client agreement
+        name: bundled_access
+        type: subscription
+        metric: contract
+        limit: -1
+        timeFrame: year
+        geo: configurable
+        unit: 1
+        price: bundled with client services agreement
+        userMultiplied: false
+    elements:
+      - name: FIX sessions for fixed income, equities, and prime brokerage
+      - name: Voice-broker coverage and bilateral trade booking
+      - name: Research and analytics distribution
+      - name: Custody, securities lending, and financing (Cantor Prime Services)
+  - id: cantor-fitzgerald-fenics-market-data
+    name: Fenics Market Data Subscription (via BGC affiliate)
+    type: enterprise
+    description: Market-data licensing from Fenics Market Data, BGC Group's exclusive data
+      distributor. Coverage spans FX, rates, credit, fixed income, energy, and equity
+      derivatives via streaming, intra-day, end-of-day, and historical feeds. Commercial
+      terms are negotiated bilaterally and governed by an exchange/redistribution-style
+      market-data agreement.
+    entries:
+      - label: Negotiated subscription
+        name: market_data_subscription
+        type: subscription
+        metric: contract
+        limit: -1
+        timeFrame: year
+        geo: configurable
+        unit: 1
+        price: contact Fenics Market Data sales
+        userMultiplied: false
+    elements:
+      - name: FX & money-market data (spot, forwards, NDFs, FX options)
+      - name: Rates data (IRS, basis swaps, OIS, FRAs, futures)
+      - name: Interest-rate options, inflation swaps & options
+      - name: Fixed income (govt/corporate bonds, CDS, futures)
+      - name: Energy & commodities (coal, freight, gas, LNG, power, metals)
+      - name: Equity derivatives (index options)
+      - name: Streaming, intra-day, end-of-day, and historical delivery
+  - id: cantor-fitzgerald-spac-investor
+    name: SPAC / Capital Markets Investor Access
+    type: enterprise
+    description: Information about Cantor Equity Partners SPAC vehicles (CEP / CEP II) and
+      Cantor-sponsored offerings is published exclusively through SEC EDGAR filings, press
+      releases, and investor materials. There is no developer-platform tier — placement is
+      conducted through the firm's capital-markets desk.
+    entries:
+      - label: Public filings only
+        name: public_filings
+        type: free
+        metric: contract
+        limit: -1
+        timeFrame: year
+        geo: us
+        unit: 1
+        price: free (SEC EDGAR)
+        userMultiplied: false
+    elements:
+      - name: SEC EDGAR filings (S-1, 8-K, 10-K/Q, proxy)
+      - name: Investor presentations
+      - name: Press releases (e.g., Twenty One Capital / XXI merger announcement)
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com

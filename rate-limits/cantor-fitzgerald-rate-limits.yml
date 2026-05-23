@@ -1,0 +1,60 @@
+specification: API Commons Rate Limits
+specificationVersion: '0.1'
+schema: https://raw.githubusercontent.com/api-evangelist/interface-research/main/schema/api-commons.yml#/$defs/RateLimits
+provider: Cantor Fitzgerald
+providerId: cantor-fitzgerald
+created: '2026-05-23'
+modified: '2026-05-23'
+reconciled: false
+tags:
+  - Rate Limiting
+  - Financial Services
+  - Investment Banking
+  - Prime Brokerage
+  - Market Data
+description: Cantor Fitzgerald does not publish public rate limits. Throughput for institutional
+  trading sessions (FIX, voice-broker booking, prime-brokerage activity) is governed by the
+  per-client agreement and venue-imposed message-rate caps. Fenics Market Data throughput is
+  bound by the upstream exchange/venue redistribution entitlement and the negotiated subscription
+  level.
+sources:
+  - https://www.cantor.com
+  - https://www.fenicsmd.com
+  - https://www.bgcgroup.com
+notes: Public rate-limit specifics not reachable without an onboarded institutional credential
+  or signed market-data agreement; reconciled set to false.
+responseCodes:
+  throttled: 429
+  serviceUnavailable: 503
+limits:
+  - name: FIX session message rate (institutional)
+    scope: account
+    metric: messages/sec
+    limit: per-session cap set during onboarding
+    notes: Trading FIX sessions are throttled per the per-client onboarding addendum and the
+      destination venue's message-rate policy.
+  - name: Prime brokerage throughput
+    scope: account
+    metric: varies
+    limit: per client services agreement
+    notes: Cantor Prime Services activity is sized at onboarding and managed by the client
+      service representative.
+  - name: Fenics Market Data feed entitlement
+    scope: subscription
+    metric: messages/sec, symbols, redistribution scope
+    limit: per market-data agreement and upstream venue entitlement
+    notes: Streaming, intra-day, end-of-day, and historical delivery throughput is bound by
+      the negotiated subscription and the redistribution rights granted by the upstream venue.
+policies:
+  - name: Onboarding-driven sizing
+    description: Throughput is sized during institutional onboarding and recorded in the client
+      services or market-data agreement; raise via the coverage representative.
+  - name: Entitlement separation
+    description: Trading, post-trade, prime-brokerage, and market-data feeds carry independent
+      entitlements and may throttle separately.
+  - name: Idempotency and retries
+    description: Trade-execution and post-trade messages should be idempotent and retried with
+      backoff per venue specifications.
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com

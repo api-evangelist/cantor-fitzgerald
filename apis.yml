@@ -1,0 +1,216 @@
+aid: cantor-fitzgerald
+url: >-
+  https://raw.githubusercontent.com/api-evangelist/cantor-fitzgerald/refs/heads/main/apis.yml
+common:
+  - type: Homepage
+    url: https://www.cantor.com
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/cantor-fitzgerald
+apis:
+  - aid: cantor-fitzgerald:cantor-fitzgerald
+    name: Cantor Fitzgerald
+    tags:
+      - Financial Services
+      - Investment Banking
+      - Prime Brokerage
+      - Fixed Income
+      - Equities
+      - Real Estate Finance
+    humanURL: https://www.cantor.com
+    properties:
+      - url: https://www.cantor.com
+        type: Homepage
+    description: >-
+      Cantor Fitzgerald, L.P. is a privately held global financial services firm founded
+      in 1945. It is a U.S. Federal Reserve primary dealer in U.S. government securities
+      and operates investment banking, fixed-income and equities trading, prime brokerage,
+      research, and asset-management businesses across more than 60 offices in 20+ countries.
+      Long-time chairman and CEO Howard Lutnick was confirmed as the 41st U.S. Secretary
+      of Commerce on February 18, 2025; his sons Brandon (chairman) and Kyle (executive
+      vice chairman) now lead the firm together with co-CEOs Pascal Bandelier, Sage
+      Kelly, and Christian Wall. The firm has no public developer API or developer portal;
+      access to electronic-trading and data feeds is gated behind institutional client
+      onboarding.
+  - aid: cantor-fitzgerald:cantor-prime-services
+    name: Cantor Prime Services
+    tags:
+      - Prime Brokerage
+      - Equities
+      - Securities Lending
+      - Financial Services
+    humanURL: https://www.cantor.com
+    properties:
+      - url: https://www.cantor.com
+        type: Homepage
+    description: >-
+      Cantor Prime Services is the firm's multi-asset prime-brokerage platform launched
+      in 2009, offering custody, securities lending, financing, and capital introduction
+      to hedge funds and asset managers. Connectivity is delivered via institutional
+      FIX sessions and bilateral integrations rather than a public REST API.
+  - aid: cantor-fitzgerald:cantor-commercial-real-estate
+    name: Cantor Commercial Real Estate (CCRE)
+    tags:
+      - Real Estate Finance
+      - Commercial Mortgages
+      - CMBS
+      - Financial Services
+    humanURL: https://www.cantor.com
+    properties:
+      - url: https://www.cantor.com
+        type: Homepage
+    description: >-
+      Cantor Commercial Real Estate, launched in 2010, originates fixed- and floating-rate
+      commercial mortgages and operates as a CMBS issuer and special servicer. Cantor
+      Fitzgerald Income Trust is the firm's non-traded real-estate income trust offered
+      through registered representatives.
+  - aid: cantor-fitzgerald:cantor-equity-partners
+    name: Cantor Equity Partners (SPAC Platform)
+    tags:
+      - SPAC
+      - Investment Banking
+      - Capital Markets
+      - Cryptocurrency
+    humanURL: https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=cantor+equity+partners
+    properties:
+      - url: https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=cantor+equity+partners
+        type: Filings
+    description: >-
+      Cantor Equity Partners is Cantor Fitzgerald's blank-check / SPAC vehicle franchise
+      (Cantor Equity Partners I, "CEP"; Cantor Equity Partners II; Cantor Fitzgerald
+      Realty SPACs). The flagship 2025 transaction is the announced merger of Cantor
+      Equity Partners with Twenty One Capital — a Bitcoin-native treasury company backed
+      by Tether, Bitfinex, and SoftBank, intended to list as XXI. There is no developer
+      API surface; investor information is published via SEC EDGAR filings.
+  - aid: cantor-fitzgerald:cantor-ventures
+    name: Cantor Ventures
+    tags:
+      - Venture Capital
+      - Corporate Development
+      - Financial Services
+    humanURL: https://www.cantor.com
+    properties:
+      - url: https://www.cantor.com
+        type: Homepage
+    description: >-
+      Cantor Ventures is the firm's corporate-venture and enterprise-development arm,
+      incubating financial-services, technology, and gaming businesses (including the
+      Hollywood Stock Exchange and TopLine Game Labs).
+  - aid: cantor-fitzgerald:bgc-group
+    name: BGC Group (Affiliated)
+    tags:
+      - Inter-Dealer Broker
+      - Market Data
+      - Fixed Income
+      - FX
+      - Energy
+      - Financial Services
+    humanURL: https://www.bgcgroup.com
+    properties:
+      - url: https://www.bgcgroup.com
+        type: Homepage
+      - url: https://www.fenicsmd.com
+        type: DataAPI
+    description: >-
+      BGC Group, Inc. (NASDAQ: BGC) was formed in 2004 when Cantor Fitzgerald spun
+      out its voice-brokerage business and remains affiliated through common ownership
+      and leadership. BGC operates inter-dealer brokerage, electronic trading (Fenics,
+      eSpeed, Lucera), and post-trade services across rates, credit, FX, energy, and
+      equity derivatives. Howard Lutnick was previously chairman and CEO; current co-CEOs
+      are John Abularrage, JP Aubin, and Sean Windeatt.
+  - aid: cantor-fitzgerald:fenics-market-data
+    name: Fenics Market Data (BGC)
+    tags:
+      - Market Data
+      - Real-Time Data
+      - Historical Data
+      - Fixed Income
+      - FX
+      - Energy
+      - Financial Services
+    humanURL: https://www.fenicsmd.com
+    properties:
+      - url: https://www.fenicsmd.com
+        type: DataAPI
+      - url: https://www.fenicsmd.com/data-products/
+        type: Documentation
+    description: >-
+      Fenics Market Data (FMD) is the "exclusive distributor of data for BGC Group,
+      Inc. (NASDAQ: BGC) and its affiliates, a global brokerage group serving the financial
+      markets." FMD covers FX & money markets (spot, forwards, NDFs, FX options), rates
+      (IRS, basis, OIS, FRAs, futures), interest-rate options, inflation, fixed income
+      (govt/corporate bonds, CDS, futures), energy & commodities (coal, freight, gas,
+      LNG, power, metals), and equity derivatives, delivered via streaming, intra-day,
+      end-of-day, and historical feeds. There is no public REST/WebSocket API; entitlements
+      and delivery are negotiated under a market-data agreement.
+  - aid: cantor-fitzgerald:newmark-group
+    name: Newmark Group (Affiliated)
+    tags:
+      - Commercial Real Estate
+      - Capital Markets
+      - Real Estate Services
+      - Financial Services
+    humanURL: https://www.nmrk.com
+    properties:
+      - url: https://www.nmrk.com
+        type: Homepage
+    description: >-
+      Newmark Group (NASDAQ: NMRK) is a commercial real-estate advisory and services
+      firm acquired by BGC Partners in October 2011 and spun out as a separate public
+      company in 2017. Services include "Capital Markets, Industrial and Logistics Services,
+      Landlord Representation, Multifamily Capital Markets, Property Management, Retail
+      Services, Tenant Representation, Valuation & Advisory." Following Howard Lutnick's
+      confirmation as U.S. Secretary of Commerce in February 2025, Barry Gosin assumed
+      the additional role of Chairman of Newmark & Company Real Estate, Inc.
+  - aid: cantor-fitzgerald:hollywood-stock-exchange
+    name: Hollywood Stock Exchange
+    tags:
+      - Prediction Market
+      - Entertainment
+      - Gaming
+      - Financial Services
+    humanURL: https://www.hsx.com
+    properties:
+      - url: https://www.hsx.com
+        type: Homepage
+    description: >-
+      Hollywood Stock Exchange, founded in 1996 and owned by Cantor Fitzgerald, is "the
+      world's virtual entertainment stock market" — a play-money prediction market for
+      movies, stars, and box-office outcomes. It has historically had a consumer web
+      front end but no publicly documented developer API.
+name: Cantor Fitzgerald
+tags:
+  - Financial Services
+  - Investment Banking
+  - Prime Brokerage
+  - Fixed Income
+  - Equities
+  - Real Estate Finance
+  - Market Data
+  - SPAC
+type: Index
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+access: 3rd-Party
+created: '2026-05-19'
+modified: '2026-05-23'
+position: Consumer
+description: >-
+  Cantor Fitzgerald, L.P. is a privately held global financial services firm founded
+  in 1945 by Bernard Gerald Cantor and John Fitzgerald, headquartered in New York
+  with more than 12,000 employees across 60+ offices in 20+ countries. The firm is
+  a U.S. Federal Reserve primary dealer and operates investment banking, fixed-income
+  and equities trading, prime brokerage, commercial real-estate lending (CCRE / Cantor
+  Fitzgerald Income Trust), asset management, a SPAC franchise (Cantor Equity Partners),
+  and corporate-venture investing (Cantor Ventures, Hollywood Stock Exchange). Cantor
+  spun out its voice-brokerage business in 2004 to form BGC Partners (now BGC Group,
+  NASDAQ: BGC), which in turn acquired Newmark in 2011 and spun it out as Newmark
+  Group (NASDAQ: NMRK) in 2017. Long-time chairman/CEO Howard Lutnick became the
+  41st U.S. Secretary of Commerce on February 18, 2025; his sons Brandon and Kyle
+  Lutnick assumed chairman and executive vice chairman roles, with Pascal Bandelier,
+  Sage Kelly, and Christian Wall serving as co-CEOs. Cantor has no public developer
+  portal — all electronic-trading, market-data, and prime-brokerage connectivity
+  is delivered B2B under institutional client agreements; the closest public data
+  surface is Fenics Market Data, sold by BGC affiliate Fenics under negotiated entitlement.
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
+specificationVersion: '0.19'

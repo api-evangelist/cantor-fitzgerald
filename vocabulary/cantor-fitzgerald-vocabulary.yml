@@ -1,0 +1,90 @@
+name: Cantor Fitzgerald Vocabulary
+description: Key terms and concepts used across Cantor Fitzgerald and its affiliated businesses
+  (BGC Group, Newmark Group, Fenics Market Data, Cantor Equity Partners).
+terms:
+  - term: Cantor Fitzgerald
+    definition: >-
+      Privately held global financial services firm founded in 1945 by Bernard Gerald Cantor
+      and John Fitzgerald, headquartered in New York. Offers investment banking, fixed-income
+      and equities trading, prime brokerage, commercial real-estate finance, asset management,
+      and SPAC sponsorship.
+  - term: Primary Dealer
+    definition: >-
+      A bank or securities broker-dealer authorized to trade directly with the U.S. Federal
+      Reserve in U.S. government securities. Cantor Fitzgerald is a designated primary dealer.
+  - term: BGC Group
+    definition: >-
+      Publicly traded inter-dealer brokerage (NASDAQ: BGC) formed in 2004 when Cantor Fitzgerald
+      spun out its voice-brokerage business. Operates voice and electronic brokerage in rates,
+      credit, FX, energy, and equity derivatives.
+  - term: Newmark Group
+    definition: >-
+      Publicly traded commercial real-estate services firm (NASDAQ: NMRK), acquired by BGC
+      Partners in October 2011 and spun out as a separate public company in 2017.
+  - term: Fenics Market Data (FMD)
+    definition: >-
+      The exclusive distributor of market data for BGC Group, Inc. and its affiliates. Covers
+      FX, money markets, rates, fixed income, credit, energy, commodities, and equity
+      derivatives via streaming, intra-day, end-of-day, and historical feeds.
+  - term: Cantor Prime Services
+    definition: >-
+      Cantor Fitzgerald's multi-asset prime-brokerage platform launched in 2009, providing
+      custody, securities lending, financing, and capital introduction to hedge funds and
+      asset managers.
+  - term: Cantor Commercial Real Estate (CCRE)
+    definition: >-
+      Cantor Fitzgerald's commercial real-estate finance arm launched in 2010, originating
+      fixed- and floating-rate commercial mortgages and operating as a CMBS issuer and special
+      servicer.
+  - term: Cantor Fitzgerald Income Trust
+    definition: >-
+      Non-traded real-estate income trust sponsored by Cantor Fitzgerald, offered through
+      registered representatives.
+  - term: Cantor Equity Partners (CEP)
+    definition: >-
+      Cantor Fitzgerald's SPAC / blank-check franchise. Cantor Equity Partners I announced in
+      2025 a merger with Twenty One Capital, a Bitcoin-native treasury company backed by Tether,
+      Bitfinex, and SoftBank, intended to list as XXI.
+  - term: Twenty One Capital
+    definition: >-
+      A Bitcoin-treasury operating company being created via merger with Cantor Equity Partners,
+      seeded with Bitcoin contributed by Tether, Bitfinex, and SoftBank. Targeted listing
+      symbol XXI.
+  - term: Cantor Ventures
+    definition: >-
+      Cantor Fitzgerald's corporate venture-capital and enterprise-development arm. Incubated
+      and owns businesses including Hollywood Stock Exchange and TopLine Game Labs.
+  - term: Hollywood Stock Exchange (HSX)
+    definition: >-
+      "The world's virtual entertainment stock market" — a play-money prediction market for
+      movies and stars, founded in 1996 and owned by Cantor Fitzgerald.
+  - term: eSpeed
+    definition: >-
+      Electronic-trading platform for U.S. Treasuries developed inside Cantor Fitzgerald in
+      1996; spun out and IPO'd in 1999; the marketplace was sold by BGC Partners to NASDAQ
+      OMX in 2013.
+  - term: Howard Lutnick
+    definition: >-
+      Long-time chairman and CEO of Cantor Fitzgerald (CEO 1991, chairman 1996); built BGC
+      Partners and oversaw post-9/11 rebuilding; confirmed as the 41st U.S. Secretary of
+      Commerce on February 18, 2025.
+  - term: Brandon Lutnick
+    definition: >-
+      Son of Howard Lutnick; named chairman of Cantor Fitzgerald in 2025 following his
+      father's confirmation as U.S. Secretary of Commerce.
+  - term: Kyle Lutnick
+    definition: >-
+      Son of Howard Lutnick; named executive vice chairman of Cantor Fitzgerald in 2025.
+  - term: FIX Session
+    definition: >-
+      A persistent connection using the Financial Information eXchange protocol — the standard
+      institutional message format for order entry, market data, and post-trade messaging used
+      by Cantor's trading and prime-brokerage businesses.
+  - term: Market-Data Agreement
+    definition: >-
+      The contract under which Fenics Market Data licenses real-time and historical data feeds
+      to subscribers, governing entitlement, redistribution scope, and fees in lieu of any
+      public per-call pricing.
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com

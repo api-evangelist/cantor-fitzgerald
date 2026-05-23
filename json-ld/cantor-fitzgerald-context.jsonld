@@ -1,0 +1,29 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "cantor": "https://www.cantor.com/ontology/",
+    "FinancialService": "https://schema.org/FinancialService",
+    "Organization": "https://schema.org/Organization",
+    "Person": "https://schema.org/Person",
+    "Corporation": "https://schema.org/Corporation",
+    "name": "https://schema.org/name",
+    "legalName": "https://schema.org/legalName",
+    "foundingDate": "https://schema.org/foundingDate",
+    "founder": "https://schema.org/founder",
+    "url": "https://schema.org/url",
+    "logo": "https://schema.org/logo",
+    "subOrganization": "https://schema.org/subOrganization",
+    "parentOrganization": "https://schema.org/parentOrganization",
+    "numberOfEmployees": "https://schema.org/numberOfEmployees",
+    "headquarters": "https://schema.org/location",
+    "tickerSymbol": "https://schema.org/tickerSymbol",
+    "businessLine": "cantor:businessLine",
+    "primaryDealer": "cantor:primaryDealer",
+    "assetClass": "cantor:assetClass",
+    "spacVehicle": "cantor:spacVehicle",
+    "mergerTarget": "cantor:mergerTarget",
+    "marketDataFeed": "cantor:marketDataFeed",
+    "feedDelivery": "cantor:feedDelivery",
+    "entitlement": "cantor:entitlement"
+  }
+}
