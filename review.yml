@@ -1,0 +1,34 @@
+aid: cantor-fitzgerald
+name: Cantor Fitzgerald
+reviewed: '2026-05-29'
+reviewer: Kin Lane
+scope: Public WebSocket / streaming API availability
+finding: >-
+  No public WebSocket API documented — Cantor offers institutional FIX /
+  proprietary feeds gated to entitled customers.
+details: >-
+  Cantor Fitzgerald, L.P. and its affiliated electronic-trading and market-data
+  franchises (BGC Group, Fenics Market Data, eSpeed, Lucera, Cantor Prime Services,
+  Cantor Commercial Real Estate, Newmark, Hollywood Stock Exchange, Cantor Equity
+  Partners, Cantor Ventures) do not publish a public WebSocket endpoint, AsyncAPI
+  spec, OpenAPI document, or self-serve developer portal. Connectivity to electronic
+  trading, market data, and prime-brokerage services is delivered B2B over institutional
+  FIX sessions, direct feeds, and bilateral integrations negotiated under client
+  agreements and market-data entitlements. The closest public surface is the Fenics
+  Market Data product catalog at fenicsmd.com, which advertises a "Direct Feed and
+  API" delivery channel but provides no public documentation, schema, or signup —
+  delivery formats (XML, CSV, JSON, GZIP) and channels (API, Desktop, Excel, Cloud,
+  FTP, SFTP, deployed servers) are all provisioned through commercial onboarding.
+sources:
+  - https://www.cantor.com
+  - https://www.bgcgroup.com
+  - https://www.fenicsmd.com
+  - https://www.fenicsmd.com/products/
+  - https://www.fenicsmd.com/delivery/direct-feed-and-api/
+  - https://www.lseg.com/en/data-analytics/financial-data/pricing-and-market-data/fixed-income-pricing-data/fenics-market-data
+  - https://www.marketswiki.com/wiki/Fenics_Market_Data
+asyncapi: null
+decision: >-
+  Skip AsyncAPI specification — no public WebSocket channel exists to model.
+  Re-evaluate if Fenics or BGC ever publishes a public streaming endpoint with
+  self-serve documentation.
