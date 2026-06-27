@@ -2,7 +2,7 @@ aid: cantor-fitzgerald
 url: >-
   https://raw.githubusercontent.com/api-evangelist/cantor-fitzgerald/refs/heads/main/apis.yml
 common:
-  - type: Homepage
+  - type: Website
     url: https://www.cantor.com
   - type: LinkedIn
     url: https://www.linkedin.com/company/cantor-fitzgerald
@@ -19,7 +19,7 @@ apis:
     humanURL: https://www.cantor.com
     properties:
       - url: https://www.cantor.com
-        type: Homepage
+        type: Website
     description: >-
       Cantor Fitzgerald, L.P. is a privately held global financial services firm founded
       in 1945. It is a U.S. Federal Reserve primary dealer in U.S. government securities
@@ -41,7 +41,7 @@ apis:
     humanURL: https://www.cantor.com
     properties:
       - url: https://www.cantor.com
-        type: Homepage
+        type: Website
     description: >-
       Cantor Prime Services is the firm's multi-asset prime-brokerage platform launched
       in 2009, offering custody, securities lending, financing, and capital introduction
@@ -57,7 +57,7 @@ apis:
     humanURL: https://www.cantor.com
     properties:
       - url: https://www.cantor.com
-        type: Homepage
+        type: Website
     description: >-
       Cantor Commercial Real Estate, launched in 2010, originates fixed- and floating-rate
       commercial mortgages and operates as a CMBS issuer and special servicer. Cantor
@@ -90,7 +90,7 @@ apis:
     humanURL: https://www.cantor.com
     properties:
       - url: https://www.cantor.com
-        type: Homepage
+        type: Website
     description: >-
       Cantor Ventures is the firm's corporate-venture and enterprise-development arm,
       incubating financial-services, technology, and gaming businesses (including the
@@ -107,7 +107,7 @@ apis:
     humanURL: https://www.bgcgroup.com
     properties:
       - url: https://www.bgcgroup.com
-        type: Homepage
+        type: Website
       - url: https://www.fenicsmd.com
         type: DataAPI
     description: >-
@@ -152,7 +152,7 @@ apis:
     humanURL: https://www.nmrk.com
     properties:
       - url: https://www.nmrk.com
-        type: Homepage
+        type: Website
     description: >-
       Newmark Group (NASDAQ: NMRK) is a commercial real-estate advisory and services
       firm acquired by BGC Partners in October 2011 and spun out as a separate public
@@ -171,7 +171,7 @@ apis:
     humanURL: https://www.hsx.com
     properties:
       - url: https://www.hsx.com
-        type: Homepage
+        type: Website
     description: >-
       Hollywood Stock Exchange, founded in 1996 and owned by Cantor Fitzgerald, is "the
       world's virtual entertainment stock market" — a play-money prediction market for
