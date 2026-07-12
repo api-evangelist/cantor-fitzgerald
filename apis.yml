@@ -2,6 +2,10 @@ aid: cantor-fitzgerald
 url: >-
   https://raw.githubusercontent.com/api-evangelist/cantor-fitzgerald/refs/heads/main/apis.yml
 common:
+  - type: VulnerabilityDisclosure
+    url: security/cantor-fitzgerald-vulnerability-disclosure.yml
+  - type: DomainSecurity
+    url: security/cantor-fitzgerald-domain-security.yml
   - type: Website
     url: https://www.cantor.com
   - type: LinkedIn
