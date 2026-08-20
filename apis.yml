@@ -14,6 +14,13 @@ apis:
   - aid: cantor-fitzgerald:cantor-fitzgerald
     name: Cantor Fitzgerald
     tags:
+      - Financial-Services
+      - Investment Banking
+      - Prime Brokerage
+      - Fixed Income
+      - Equities
+      - Real Estate Finance
+    tags_raw:
       - Financial Services
       - Investment Banking
       - Prime Brokerage
@@ -41,6 +48,11 @@ apis:
       - Prime Brokerage
       - Equities
       - Securities Lending
+      - Financial-Services
+    tags_raw:
+      - Prime Brokerage
+      - Equities
+      - Securities Lending
       - Financial Services
     humanURL: https://www.cantor.com
     properties:
@@ -54,6 +66,11 @@ apis:
   - aid: cantor-fitzgerald:cantor-commercial-real-estate
     name: Cantor Commercial Real Estate (CCRE)
     tags:
+      - Real Estate Finance
+      - Commercial Mortgages
+      - CMBS
+      - Financial-Services
+    tags_raw:
       - Real Estate Finance
       - Commercial Mortgages
       - CMBS
@@ -90,6 +107,10 @@ apis:
     tags:
       - Venture Capital
       - Corporate Development
+      - Financial-Services
+    tags_raw:
+      - Venture Capital
+      - Corporate Development
       - Financial Services
     humanURL: https://www.cantor.com
     properties:
@@ -102,6 +123,13 @@ apis:
   - aid: cantor-fitzgerald:bgc-group
     name: BGC Group (Affiliated)
     tags:
+      - Inter-Dealer Broker
+      - Market Data
+      - Fixed Income
+      - FX
+      - Energy
+      - Financial-Services
+    tags_raw:
       - Inter-Dealer Broker
       - Market Data
       - Fixed Income
@@ -130,6 +158,14 @@ apis:
       - Fixed Income
       - FX
       - Energy
+      - Financial-Services
+    tags_raw:
+      - Market Data
+      - Real-Time Data
+      - Historical Data
+      - Fixed Income
+      - FX
+      - Energy
       - Financial Services
     humanURL: https://www.fenicsmd.com
     properties:
@@ -152,6 +188,11 @@ apis:
       - Commercial Real Estate
       - Capital Markets
       - Real Estate Services
+      - Financial-Services
+    tags_raw:
+      - Commercial Real Estate
+      - Capital Markets
+      - Real Estate Services
       - Financial Services
     humanURL: https://www.nmrk.com
     properties:
@@ -171,6 +212,11 @@ apis:
       - Prediction Market
       - Entertainment
       - Gaming
+      - Financial-Services
+    tags_raw:
+      - Prediction Market
+      - Entertainment
+      - Gaming
       - Financial Services
     humanURL: https://www.hsx.com
     properties:
@@ -183,6 +229,15 @@ apis:
       front end but no publicly documented developer API.
 name: Cantor Fitzgerald
 tags:
+  - Financial-Services
+  - Investment Banking
+  - Prime Brokerage
+  - Fixed Income
+  - Equities
+  - Real Estate Finance
+  - Market Data
+  - SPAC
+tags_raw:
   - Financial Services
   - Investment Banking
   - Prime Brokerage
