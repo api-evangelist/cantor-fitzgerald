@@ -18,7 +18,7 @@ apis:
       - Investment Banking
       - Prime Brokerage
       - Fixed Income
-      - Equities
+      - Stocks
       - Real Estate Finance
     tags_raw:
       - Financial Services
@@ -46,7 +46,7 @@ apis:
     name: Cantor Prime Services
     tags:
       - Prime Brokerage
-      - Equities
+      - Stocks
       - Securities Lending
       - Financial-Services
     tags_raw:
@@ -233,7 +233,7 @@ tags:
   - Investment Banking
   - Prime Brokerage
   - Fixed Income
-  - Equities
+  - Stocks
   - Real Estate Finance
   - Market Data
   - SPAC
