@@ -2,6 +2,8 @@ aid: cantor-fitzgerald
 url: >-
   https://raw.githubusercontent.com/api-evangelist/cantor-fitzgerald/refs/heads/main/apis.yml
 common:
+  - url: https://www.cantor.com/feed/
+    type: BlogRSS
   - type: VulnerabilityDisclosure
     url: security/cantor-fitzgerald-vulnerability-disclosure.yml
   - type: DomainSecurity
@@ -282,7 +284,7 @@ accessModel:
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/cantor-fitzgerald.png
 access: 3rd-Party
 created: '2026-05-19'
-modified: '2026-05-23'
+modified: '2026-10-06'
 position: Consuming
 description: >-
   Cantor Fitzgerald, L.P. is a privately held global financial services firm founded
