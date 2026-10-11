@@ -1,0 +1,11 @@
+[
+  {
+    "repo": "cantor-fitzgerald",
+    "captured_at": "2026-10-11T183702",
+    "source_url": "https://www.cantor.com",
+    "source_type": "Website",
+    "file": "cantor-fitzgerald-2026-10-11T183702.png",
+    "bytes": 625836,
+    "capture": "playwright-local"
+  }
+]
