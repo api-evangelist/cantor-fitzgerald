@@ -138,7 +138,7 @@ apis:
       - Inter-Dealer Broker
       - Market Data
       - Fixed Income
-      - FX
+      - Foreign Exchange
       - Energy
       - Financial Services
     tags_raw:
@@ -169,7 +169,7 @@ apis:
       - Real-Time Data
       - Historical Data
       - Fixed Income
-      - FX
+      - Foreign Exchange
       - Energy
       - Financial Services
     tags_raw:
